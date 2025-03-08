@@ -52,11 +52,9 @@ bash
 npm run migrate
 Inicie a Aplicação Agora, inicie o servidor:
 
-bash
-npm run start
-Acesse o Sistema A aplicação estará acessível em http://localhost:3333.
 
 🛠️ Estrutura do Projeto
+
 📂 src
 
  ┣ 📂 controllers
@@ -90,16 +88,4 @@ Cache para otimização de desempenho.
 
 API RESTful para integração com o frontend.
 
-🧪 Testes
-Execute os testes automatizados para garantir a estabilidade do sistema:
 
-bash
-npm run test
-
-🛡️ Segurança
-Use variáveis de ambiente para armazenar informações sensíveis.
-
-Configure permissões adequadas nos contêineres e serviços externos.
-
-📝 Licença
-Este projeto está sob a licença MIT. Consulte o arquivo LICENSE para mais informações.
