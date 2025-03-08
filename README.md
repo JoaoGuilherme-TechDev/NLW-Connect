@@ -32,14 +32,16 @@ Clone o Repositório
 
 bash
 git clone https://github.com/seu-usuario/sistema-indicacoes-backend.git
+
 cd sistema-indicacoes-backend
+
 Configure as Variáveis de Ambiente
 
 Crie um arquivo .env na raiz do projeto com as seguintes variáveis:
 
-DATABASE_URL=postgres://usuario:senha@endereco:porta/nome_do_banco
-REDIS_URL=redis://usuario:senha@endereco:porta
-PORT=3000
+DATABASE_URL=postgresql://docker:docker@localhost:5432/connect
+REDIS_URL=redis://localhost:6379
+PORT=3333
 Inicie o Docker Certifique-se de que o Docker está em execução e execute o seguinte comando para subir os contêineres:
 
 bash
@@ -52,16 +54,23 @@ Inicie a Aplicação Agora, inicie o servidor:
 
 bash
 npm run start
-Acesse o Sistema A aplicação estará acessível em http://localhost:3000.
+Acesse o Sistema A aplicação estará acessível em http://localhost:3333.
 
 🛠️ Estrutura do Projeto
 📂 src
+
  ┣ 📂 controllers
+ 
  ┣ 📂 models
+ 
  ┣ 📂 routes
+ 
  ┣ 📂 services
+ 
  ┣ 📂 utils
+ 
  ┗ index.js
+ 
 controllers: Controladores responsáveis por lidar com as requisições.
 
 models: Definições de entidades e esquemas do banco de dados.
@@ -86,6 +95,7 @@ Execute os testes automatizados para garantir a estabilidade do sistema:
 
 bash
 npm run test
+
 🛡️ Segurança
 Use variáveis de ambiente para armazenar informações sensíveis.
 
